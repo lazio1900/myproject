@@ -16,3 +16,5 @@ def create(question_id):
     db.session.add(answer)
     db.session.commit()
     return redirect(url_for('question,detail', question_id=question_id))
+
+chk add
