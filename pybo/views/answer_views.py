@@ -6,7 +6,7 @@ from werkzeug.utils import redirect
 from pybo import db
 from pybo.models import Question, Answer
 
-bp = Blueprint('answer', __name__, url_prefix = 'answer')
+bp = Blueprint('answer', __name__, url_prefix = '/answer')
 
 @bp.route('/create/<int:question_id>', methods = ('POST',))
 def create(question_id):
